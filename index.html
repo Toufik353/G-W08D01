@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CallBack Hell Practice</title>
+
+    <style>
+        .container{
+            position: absolute; 
+            top: 50%; 
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="container" >
+        <h1></h1>
+    </div>
+
+    <script>
+        let count = 10;
+        let h1 = document.querySelector('h1');
+        //CallBack Hell
+
+        setTimeout(function(){
+            h1.innerText = count;
+            count--;
+            setTimeout(function(){
+                h1.innerText = count;
+                count--;
+                setTimeout(function(){
+                    h1.innerText = count;
+                    count--;
+                    setTimeout(function(){
+                        h1.innerText = count;
+                        count--;
+                        setTimeout(function(){
+                            h1.innerText = count;
+                            count--;
+                            setTimeout(function(){
+                                h1.innerText = count;
+                                count--;
+                                setTimeout(function(){
+                                    h1.innerText = count;
+                                    count--;
+                                    setTimeout(function(){
+                                        h1.innerText = count;
+                                        count--;
+                                        setTimeout(function(){
+                                            h1.innerText = count;
+                                            count--;
+                                            setTimeout(function(){
+                                                h1.innerText = count;
+                                                count--;
+                                                setTimeout(function(){
+                                                    h1.innerText = 'Marry Christmas!!';
+                                                    
+                                                },1000);
+                                            },1000);
+                                        },1000);
+                                    },1000);
+                                },1000);
+                            },1000);
+                        },1000);
+                    },1000);
+                },1000);
+                
+            },1000);
+        },0);
+    </script>
+</body>
+</html>
